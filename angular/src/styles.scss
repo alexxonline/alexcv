@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+$secondary-color: #e0d23a;
+$primary-color: #2f3c4f;
+
+body {
+  background-color: #e2e2e2;
+  background-image: url("assets/46.jpg");
+  height: 100%;
+}
+
+.sheet {
+  background-color: #ffffff;
+  box-shadow: 5px 10px 20px #cccccc;
+}
+
+.root-html {
+  height: 100%;
+}
+
+.header-row {
+  background-color: $primary-color;
+  color: #ffffff;
+  font-family: Monserrat, Helvetica, sans-serif;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  h1 {
+    letter-spacing: 0.5rem;
+  }
+  h1,
+  h4,
+  p {
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h4,
+  p {
+    color: $secondary-color;
+  }
+  hr {
+    border-color: $secondary-color;
+  }
+  p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+}
+
+.section-header {
+  text-transform: uppercase;
+  color: $primary-color;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  letter-spacing: 0.5rem;
+}
+
+.main-section {
+  h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  h5 {
+    color: $secondary-color;
+    font-style: italic;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.secondary-section {
+  a {
+    text-decoration: none;
+  }
+}
+
+.extra-info {
+  color: #777;
+}
+
+@media print {
+  .header-row {
+    background-color: $primary-color !important;
+  }
+}
