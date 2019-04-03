@@ -1,81 +1,70 @@
 <div class="container sheet">
-  <div class="row header-row">
-    <div class="col-md-12 text-center">
-      <p>I am</p>
-    </div>
-    <div class="col-md-12 text-center">
-      <h1>Alex Saez</h1>
-    </div>
-  </div>
-  <div class="row header-row">
-    <div class="col-md-3">
-      <hr />
-    </div>
-    <div class="col-md-6 text-center">
-      <h4>Full stack developer</h4>
-    </div>
-    <div class="col-md-3">
-      <hr />
-    </div>
-  </div>
+  <cv-header>
+    <p class="first-line">I am</p>
+    <h1 class="name">Alex Saez</h1>
+    <h4 class="title">Full stack developer</h4>
+  </cv-header>
   <div class="row header-row pb-4 pt-2">
-    <div class="col-md-3 text-center d-flex flex-column">
+    <cv-box-zone>
       <i class="fa fa-map-marker icon"></i>
-      <span class="mt-2">Córdoba, Argentina</span>
-    </div>
-    <div class="col-md-3 text-center d-flex flex-column">
+      <span class="text mt-2">Córdoba, Argentina</span>
+    </cv-box-zone>
+    <cv-box-zone>
       <i class="fa fa-envelope icon"></i>
-      <a href="https://alexsaez.net/contact" class="mt-2" target="_blank"
+      <a href="https://alexsaez.net/contact" class="text mt-2" target="_blank"
         >alexsaez.net/contact</a
       >
-    </div>
-    <div class="col-md-3 text-center d-flex flex-column">
+    </cv-box-zone>
+    <cv-box-zone>
       <i class="fab fa-chrome icon"></i>
       <a
         href="https://protecno.io/authors/alex-saez/"
-        class="mt-2"
+        class="text mt-2"
         target="_blank"
         >protecno.io/authors/alex-saez/</a
       >
-    </div>
-    <div class="col-md-3 text-center d-flex flex-column">
+    </cv-box-zone>
+    <cv-box-zone>
       <i class="fab fa-linkedin icon"></i>
-      <a href="https://linkedin.com/in/alexsaez" class="mt-2" target="_blank"
+      <a
+        href="https://linkedin.com/in/alexsaez"
+        class="text mt-2"
+        target="_blank"
         >LinkedIn</a
       >
-    </div>
+    </cv-box-zone>
   </div>
   <div class="row mt-4">
     <div class="col-md-3 text-center">
-      <img
-        src="assets/alex_profile.png"
-        alt="Alex Profile Pic"
-        style="height: 12rem;"
-      />
+      <cv-profile-pic src="assets/alex_profile.png"> </cv-profile-pic>
     </div>
     <div class="col-md-9">
-      <li>
-        I'm fascinated by learning. I'm constantly learning about new
-        technologies.
-      </li>
-      <li>
-        Anyone works with me is not only getting a new developer but also a peer
-        educator who is willing to share the knowledge in order to make the
-        business grow.
-      </li>
-      <li>
-        I also enjoy searching for better ways of doing the everyday things so
-        you are getting an asset which value increases in time.
-      </li>
+      <cv-brief>
+        <ul>
+          <li>
+            I'm fascinated by learning. I'm constantly learning about new
+            technologies.
+          </li>
+          <li>
+            Anyone works with me is not only getting a new developer but also a
+            peer educator who is willing to share the knowledge in order to make
+            the business grow.
+          </li>
+          <li>
+            I also enjoy searching for better ways of doing the everyday things
+            so you are getting an asset which value increases in time.
+          </li>
+        </ul>
+      </cv-brief>
     </div>
   </div>
   <div class="row mt-4">
-    <div class="col-md-3 text-center border-right">
-      <h3 class="section-header pt-2 pb-2">Skills</h3>
-    </div>
-    <div class="col-md-9 text-center border-right">
-      <h3 class="section-header pt-2 pb-2">Work Experience</h3>
-    </div>
+    <cv-section-header-container class="col-md-3 border-right">
+      <cv-section-header>Skills</cv-section-header>
+    </cv-section-header-container>
+    <cv-section-header-container class="col-md-9">
+      <cv-section-header>Work Experience</cv-section-header>
+    </cv-section-header-container>
   </div>
   <div class="row mt-4 secondary-section">
     <div class="col-md-3 border-right">
@@ -98,9 +87,9 @@
         <li>Technical Writing</li>
         <li>Azure DevOps</li>
       </ul>
-      <div class="text-center border-right mt-5">
-        <h3 class="section-header pt-2 pb-2">Education</h3>
-      </div>
+      <cv-section-header-container class="mt-5">
+        <cv-section-header>Education</cv-section-header>
+      </cv-section-header-container>
       <ul>
         <li>
           <p class="mb-0 extra-info">From 2001 to 2006</p>
@@ -120,9 +109,10 @@
         </li>
       </ul>
 
-      <div class="text-center border-right mt-5">
-        <h3 class="section-header pt-2 pb-2">Languages</h3>
-      </div>
+      <cv-section-header-container class="mt-5">
+        <cv-section-header>Languages</cv-section-header>
+      </cv-section-header-container>
+
       <ul>
         <li>Spanish - Native</li>
         <li>English - Advanced Level With First Certificate</li>
@@ -157,13 +147,19 @@
           Implementation of a continuos integration pipeline using Azure DevOps
         </li>
       </ul>
-      <h4>Technical Content Writer</h4>
+      <h4>Technical Content Author</h4>
       <h5>Conexión Efectiva</h5>
       <span class="extra-info">From 2014</span>
       <ul>
         <li>
           Writing of programming articles at the site
           <a href="https://protecno.io">ProTecno.io</a>
+        </li>
+        <li>
+          Authoring of an Adobe XD course
+          <a href="https://www.youtube.com/watch?v=wi77WUdSD4I" target="_blank"
+            >(view in Youtube)</a
+          >
         </li>
       </ul>
       <h4>Developer</h4>
@@ -184,9 +180,11 @@
           Server, Angular 7, Xamarin, Discourse and ElasticSearch
         </li>
         <li>
-          The making of this same resume using Bootstrap 4 and Angular 7.
+          The making of this resume using Bootstrap 4 and Angular 7.
 
-          <a href="https://github.com/alexxonline/resume">View source</a>
+          <a href="https://github.com/alexxonline/alexcv" target="_blank"
+            >View source</a
+          >
         </li>
       </ul>
     </div>
