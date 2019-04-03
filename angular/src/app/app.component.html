@@ -1,13 +1,13 @@
 <div class="container sheet">
   <cv-header>
-    <p class="first-line">I am</p>
-    <h1 class="name">Alex Saez</h1>
-    <h4 class="title">Full stack developer</h4>
+    <p class="first-line">{{ data.firstLine }}</p>
+    <h1 class="name">{{ data.name }}</h1>
+    <h4 class="title">{{ data.title }}</h4>
   </cv-header>
   <div class="row header-row pb-4 pt-2">
     <cv-box-zone>
       <i class="fa fa-map-marker icon"></i>
-      <span class="text mt-2">Córdoba, Argentina</span>
+      <span class="text mt-2">{{ data.location }}</span>
     </cv-box-zone>
     <cv-box-zone>
       <i class="fa fa-envelope icon"></i>
@@ -39,23 +39,7 @@
       <cv-profile-pic src="assets/alex_profile.png"> </cv-profile-pic>
     </div>
     <div class="col-md-9">
-      <cv-brief>
-        <ul>
-          <li>
-            I'm fascinated by learning. I'm constantly learning about new
-            technologies.
-          </li>
-          <li>
-            Anyone works with me is not only getting a new developer but also a
-            peer educator who is willing to share the knowledge in order to make
-            the business grow.
-          </li>
-          <li>
-            I also enjoy searching for better ways of doing the everyday things
-            so you are getting an asset which value increases in time.
-          </li>
-        </ul>
-      </cv-brief>
+      <cv-item-list [list]="data.brief"></cv-item-list>
     </div>
   </div>
   <div class="row mt-4">
@@ -66,27 +50,9 @@
       <cv-section-header>Work Experience</cv-section-header>
     </cv-section-header-container>
   </div>
-  <div class="row mt-4 secondary-section">
+  <div class="row mt-3 secondary-section">
     <div class="col-md-3 border-right">
-      <ul>
-        <li>.NET</li>
-        <li>C#</li>
-        <li>Azure</li>
-        <li>Xamarin</li>
-        <li>HTML 5</li>
-        <li>CSS3</li>
-        <li>AngularJS</li>
-        <li>Angular</li>
-        <li>RxJS</li>
-        <li>React</li>
-        <li>React Native</li>
-        <li>Vue</li>
-        <li>SQL Server</li>
-        <li>Adobe XD</li>
-        <li>Adobe CC Suite</li>
-        <li>Technical Writing</li>
-        <li>Azure DevOps</li>
-      </ul>
+      <cv-item-list [list]="data.skills"></cv-item-list>
       <cv-section-header-container class="mt-5">
         <cv-section-header>Education</cv-section-header>
       </cv-section-header-container>
@@ -97,7 +63,7 @@
         </li>
         <li>
           <p class="mb-0 extra-info">From 2007</p>
-          Information Systems Engineers - In progress
+          Information Systems Engineer - In progress
         </li>
         <li>
           <p class="mb-0 extra-info">From 2007</p>
@@ -113,11 +79,7 @@
         <cv-section-header>Languages</cv-section-header>
       </cv-section-header-container>
 
-      <ul>
-        <li>Spanish - Native</li>
-        <li>English - Advanced Level With First Certificate</li>
-        <li>Portuguese - Basic</li>
-      </ul>
+      <cv-item-list [list]="data.languages"></cv-item-list>
     </div>
     <div class="col-md-9 pl-4 main-section">
       <h4>Full Stack Developer</h4>
@@ -166,7 +128,7 @@
       <h5>Freelance</h5>
       <span class="extra-info">From 2013</span>
       <ul>
-        <li>Implementation of a Wordpress plugin using PHP and SQL Server</li>
+        <li>Implementation of a Wordpress plugin using PHP and MySql</li>
         <li>
           Migration of an application from using WPF and SQL Server to using UWP
           and Sqlite

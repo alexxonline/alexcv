@@ -6,6 +6,7 @@ import { ProfilePicComponent } from "./profile-pic/profile-pic.component";
 import { BriefComponent } from "./brief/brief.component";
 import { SectionHeaderComponent } from "./section-header/section-header.component";
 import { SectionHeaderContainerComponent } from "./section-header-container/section-header-container.component";
+import { ItemListComponent } from './item-list/item-list.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,15 @@ import { SectionHeaderContainerComponent } from "./section-header-container/sect
     ProfilePicComponent,
     BriefComponent,
     SectionHeaderComponent,
-    SectionHeaderContainerComponent
+    SectionHeaderContainerComponent,
+    ItemListComponent
   ],
   imports: [CommonModule],
   exports: [
     BoxZoneComponent,
     BriefComponent,
     CvHeaderComponent,
+    ItemListComponent,
     ProfilePicComponent,
     SectionHeaderComponent,
     SectionHeaderContainerComponent
