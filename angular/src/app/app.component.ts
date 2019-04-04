@@ -59,7 +59,18 @@ export class AppComponent {
           `Writing of programming articles at the site ProTecno.io`,
           `Authoring of an Adobe XD course (view in Youtube)`
         ],
-        links: []
+        links: [
+          {
+            itemIndex: 0,
+            text: "ProTecno.io",
+            link: "https://protecno.io"
+          },
+          {
+            itemIndex: 1,
+            text: "(view in Youtube)",
+            link: "https://www.youtube.com/watch?v=wi77WUdSD4I"
+          }
+        ]
       },
       {
         title: "Developer",
@@ -74,6 +85,13 @@ export class AppComponent {
           `Implementation of a Orchard App using ASP.NET Core MVC Web API, SQL
           Server, Angular 7, Xamarin, Discourse and ElasticSearch`,
           `The making of this resume using Bootstrap 4 and Angular 7. View Source`
+        ],
+        links: [
+          {
+            itemIndex: 4,
+            text: "View Source",
+            link: "https://github.com/alexxonline/alexcv"
+          }
         ]
       }
     ],

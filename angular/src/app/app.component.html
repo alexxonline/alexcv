@@ -54,8 +54,18 @@
     <div class="col-md-3 border-right">
       <cv-item-list [list]="data.skills"></cv-item-list>
       <cv-section-header-container class="mt-5">
-        <cv-section-header>Education</cv-section-header>
-      </cv-section-header-container>
+        <cv-section-header
+          >Education</cv-section-header
+        > </cv-section-header-container
+      ><!--
+      <cv-item-list
+        [list]="data.education"
+        [itemTemplate]="itemTemplate"
+      ></cv-item-list>
+      <ng-template #itemTemplate>
+        <li *ngFor="let item of list">item.description</li>
+      </ng-template>
+      -->
       <ul>
         <li>
           <p class="mb-0 extra-info">From 2001 to 2006</p>
@@ -82,73 +92,12 @@
       <cv-item-list [list]="data.languages"></cv-item-list>
     </div>
     <div class="col-md-9 pl-4 main-section">
-      <h4>Full Stack Developer</h4>
-      <h5>C&amp;C Computación S.A.</h5>
-      <span class="extra-info">From 2011</span>
-      <ul>
-        <li>
-          Implementation of a pharmacy software using ASP.NET Winforms,
-          Webforms, MVC3, AngularJS and SQL Server.
-        </li>
-        <li>
-          Also worked with backend services using MongoDb, Azure Functions, data
-          movement using Azure Data Factory, Log collection in Azure Storage.
-        </li>
-        <li>
-          Implementation of a system for a social security using ASP.NET Web
-          Api, AngularJs, Azure SQL Database, Azure CosmosDb
-        </li>
-        <li>
-          Implementation of a software update system using Windows Services
-        </li>
-        <li>
-          Implementation of a system for importing product prices from various
-          datasources (txt, Excel, etc).
-        </li>
-        <li>
-          Implementation of a continuos integration pipeline using Azure DevOps
-        </li>
-      </ul>
-      <h4>Technical Content Author</h4>
-      <h5>Conexión Efectiva</h5>
-      <span class="extra-info">From 2014</span>
-      <ul>
-        <li>
-          Writing of programming articles at the site
-          <a href="https://protecno.io">ProTecno.io</a>
-        </li>
-        <li>
-          Authoring of an Adobe XD course
-          <a href="https://www.youtube.com/watch?v=wi77WUdSD4I" target="_blank"
-            >(view in Youtube)</a
-          >
-        </li>
-      </ul>
-      <h4>Developer</h4>
-      <h5>Freelance</h5>
-      <span class="extra-info">From 2013</span>
-      <ul>
-        <li>Implementation of a Wordpress plugin using PHP and MySql</li>
-        <li>
-          Migration of an application from using WPF and SQL Server to using UWP
-          and Sqlite
-        </li>
-        <li>
-          Implementation of a store app with server side rendering using VueJS,
-          Nuxt and Bootstrap 4
-        </li>
-        <li>
-          Implementation of a Orchard App using ASP.NET Core MVC Web API, SQL
-          Server, Angular 7, Xamarin, Discourse and ElasticSearch
-        </li>
-        <li>
-          The making of this resume using Bootstrap 4 and Angular 7.
-
-          <a href="https://github.com/alexxonline/alexcv" target="_blank"
-            >View source</a
-          >
-        </li>
-      </ul>
+      <ng-container *ngFor="let exp of data.experience">
+        <h4>{{ exp.title }}</h4>
+        <h5>{{ exp.company }}</h5>
+        <span class="extra-info">{{ exp.timeframe }}</span>
+        <cv-item-list [list]="exp.items" [links]="exp.links"></cv-item-list>
+      </ng-container>
     </div>
   </div>
 </div>
