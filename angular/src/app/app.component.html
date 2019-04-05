@@ -30,16 +30,9 @@
       <cv-item-list [list]="data.brief"></cv-item-list>
     </div>
   </div>
-  <div class="row mt-4">
-    <cv-section-header-container class="col-md-3 border-right">
-      <cv-section-header>Skills</cv-section-header>
-    </cv-section-header-container>
-    <cv-section-header-container class="col-md-9">
-      <cv-section-header>Work Experience</cv-section-header>
-    </cv-section-header-container>
-  </div>
   <div class="row mt-3 secondary-section">
     <div class="col-md-3 border-right">
+      <cv-section-header>Skills</cv-section-header>
       <cv-item-list [list]="data.skills"></cv-item-list>
       <cv-section-header-container class="mt-5">
         <cv-section-header>Education</cv-section-header>
@@ -59,6 +52,7 @@
       <cv-item-list [list]="data.languages"></cv-item-list>
     </div>
     <div class="col-md-9 pl-4 main-section">
+      <cv-section-header>Work Experience</cv-section-header>
       <ng-container *ngFor="let exp of data.experience">
         <h4>{{ exp.title }}</h4>
         <h5>{{ exp.company }}</h5>
