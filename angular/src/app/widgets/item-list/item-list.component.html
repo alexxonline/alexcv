@@ -1,7 +1,7 @@
 <ul>
   <ng-container
-    *ngTemplateOutlet="itemTemplate ? itemTemplate : defaultLi"
-  ></ng-container>
+    *ngTemplateOutlet="itemTemplate ? itemTemplate : defaultLi; context: {list: this.list, links:this.links}">
+  </ng-container>
 </ul>
 
 <ng-template #defaultLi>

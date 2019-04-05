@@ -1,0 +1,9 @@
+@import '../../../variables';
+
+.section-header {
+    text-transform: uppercase;
+    color: $primary-color;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    letter-spacing: 0.5rem;
+  }

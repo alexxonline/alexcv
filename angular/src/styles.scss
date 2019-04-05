@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-$secondary-color: #e0d23a;
-$primary-color: #2f3c4f;
+@import 'variables';
 
 body {
   background-color: #e2e2e2;
@@ -52,13 +51,6 @@ body {
   }
 }
 
-.section-header {
-  text-transform: uppercase;
-  color: $primary-color;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  letter-spacing: 0.5rem;
-}
 
 .main-section {
   h4 {
