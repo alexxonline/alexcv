@@ -104,6 +104,7 @@ export const data = {
         "Xamarin",
         "HTML 5",
         "CSS3",
+        "Javascript", 
         "AngularJS",
         "Angular",
         "RXJS",
