@@ -58,7 +58,8 @@ export const data = {
       items: [
         `Writing of programming articles at the site ProTecno.io`,
         `Authoring of an Adobe XD course (view in Youtube)`,
-        `Speaker at WebConf conference, my talk was about web components`
+        `Speaker at WebConf conference, my talk was about web components`,
+        `Writing of a book that is published on Amazon`
       ],
       links: [
         {
@@ -75,6 +76,12 @@ export const data = {
           itemIndex: 2,
           text: "WebConf",
           link: "https://webconf.tech"
+        },
+        {
+          itemIndex: 3,
+          text: "Amazon",
+          link:
+            "https://www.amazon.com/Introducci%C3%B3n-ASP-NET-Core-2-2-Spanish-ebook/dp/B07S5F9GSN/ref=sr_1_1"
         }
       ]
     },
