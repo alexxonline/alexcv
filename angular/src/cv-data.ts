@@ -58,7 +58,9 @@ export const data = {
       timeframe: "From 2014",
       items: [
         `Writing of programming articles at the site ProTecno.io`,
-        `Authoring of an Adobe XD course (view in Youtube)`
+        `Authoring of an Adobe XD course (view in Youtube)`,
+        `Speaker at WebConf conference, my talk was about web components`,
+        `Writing of a book that is published on Amazon`
       ],
       links: [
         {
@@ -70,6 +72,17 @@ export const data = {
           itemIndex: 1,
           text: "(view in Youtube)",
           link: "https://www.youtube.com/watch?v=wi77WUdSD4I"
+        },
+        {
+          itemIndex: 2,
+          text: "WebConf",
+          link: "https://webconf.tech"
+        },
+        {
+          itemIndex: 3,
+          text: "Amazon",
+          link:
+            "https://www.amazon.com/Introducci%C3%B3n-ASP-NET-Core-2-2-Spanish-ebook/dp/B07S5F9GSN/ref=sr_1_1"
         }
       ]
     },
@@ -108,6 +121,7 @@ export const data = {
     "Xamarin",
     "HTML 5",
     "CSS3",
+    "Javascript",
     "AngularJS",
     "Angular",
     "RXJS",
