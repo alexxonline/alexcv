@@ -10,7 +10,7 @@ export const data = {
   linkedInUrl: "https://linkedin.com/in/alexsaez",
   brief: [
     `I'm fascinated by learning. I'm constantly learning about new technologies.`,
-    `Anyone works with me is not only getting a new developer but also a
+    `Anyone who works with me is not only getting a new developer but also a
      peer educator who is willing to share the knowledge in order to make
      the business grow.`,
     `I also enjoy searching for better ways of doing the everyday things
