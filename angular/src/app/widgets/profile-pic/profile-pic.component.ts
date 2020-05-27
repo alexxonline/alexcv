@@ -1,9 +1,9 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: "cv-profile-pic",
-  templateUrl: "./profile-pic.component.html",
-  styleUrls: ["./profile-pic.component.scss"]
+  selector: 'cv-profile-pic',
+  templateUrl: './profile-pic.component.html',
+  styleUrls: ['./profile-pic.component.scss'],
 })
 export class ProfilePicComponent implements OnInit {
   @Input() src: string;
