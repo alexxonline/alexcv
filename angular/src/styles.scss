@@ -2,8 +2,10 @@
 @import 'variables';
 
 body {
-  background-color: #e2e2e2;
-  background-image: url("assets/46.jpg");
+  background-color: black;
+  background-image: url("assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
 }
 
