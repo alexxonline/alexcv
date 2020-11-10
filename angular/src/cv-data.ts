@@ -35,6 +35,16 @@ export const data = {
   ],
   experience: [
     {
+      title: 'Tech Lead',
+      company: 'Incluit',
+      timeframe: 'From 2020',
+      items: [
+      `Tech Lead at Origination squad at Naranja. The functions for the role are managing the IT Team of the Squad to ensure business objectives are met. 
+      Coaching and give feedback to the It team. To ensure the team is following the best practices from the company. 
+      Technologies used are Angular, TypeScript, NodeJs, Express, AWS Lambda, AWS Api Gateway, AWS EKS, AWS Dynamodb.`
+      ],
+    },
+    {
       title: 'Senior Front-End Developer',
       company: 'Incluit',
       timeframe: 'From 2019',
