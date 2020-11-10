@@ -47,7 +47,7 @@ export const data = {
     {
       title: 'Senior Front-End Developer',
       company: 'Incluit',
-      timeframe: 'From 2019',
+      timeframe: 'From 2019 to 2020',
       items: [
         `Advanced Front-End developer programming work for Naranja using Angular, rxjs, Ngrx, NativeScript,
         Android and iOS development, GitLab CI, AWS.`,
