@@ -9,12 +9,9 @@ export const data = {
   websiteLink: 'https://protecno.io/authors/alex-saez/',
   linkedInUrl: 'https://linkedin.com/in/alexsaez',
   brief: [
-    `There's no thing I love as much as I love learning. I'm constantly learning new things.`,
-    `Anyone who works with me is not only getting a developer or their team. but also a
-     peer educator who is willing to share his knowledge in order to make
-     the business grow.`,
-    `I also enjoy looking for better ways of doing things
-     so you are getting an asset whose value increases in time.`,
+    `Innovative Engineering Manager, technology enthusiast, and strategic leader with a passion for driving cutting-edge solutions. `,
+    `Proven record of optimizing team performance and delivering projects in diverse tech domains.`,
+    `Committed to fostering a culture of creativity and continuous improvement.`,
   ],
   education: [
     { timeframe: 'From 2001 to 2006', description: 'Highschool - Completed' },
@@ -34,10 +31,30 @@ export const data = {
     },
   ],
   experience: [
+     {
+      title: 'Engineering Manager',
+      company: 'Naranja X',
+      timeframe: 'From 2022',
+      items: [
+      ` Engineering Manager at Naranja X.  The functions for the role are managing several IT teams related to credit cards.
+       Manage the staff and make architecture decisions. Do performance reviews.
+      Technologies managed are Swift, Kotlin, Angular, TypeScript, NodeJs, Express, AWS Lambda, AWS Api Gateway, AWS EKS, AWS Dynamodb.`
+      ],
+    },
+     {
+      title: 'Tech Lead',
+      company: 'Naranja X',
+      timeframe: 'From 2021 to 2022',
+      items: [
+      `Tech Lead at Origination squad at Naranja. The functions for the role are managing the IT Team of the Squad to ensure business objectives are met. 
+      Coaching and give feedback to the It team. To ensure the team is following the best practices from the company. 
+      Technologies used are Angular, TypeScript, NodeJs, Express, AWS Lambda, AWS Api Gateway, AWS EKS, AWS Dynamodb.`
+      ],
+    },
     {
       title: 'Tech Lead',
       company: 'Incluit',
-      timeframe: 'From 2020',
+      timeframe: 'From 2020 to 2021',
       items: [
       `Tech Lead at Origination squad at Naranja. The functions for the role are managing the IT Team of the Squad to ensure business objectives are met. 
       Coaching and give feedback to the It team. To ensure the team is following the best practices from the company. 
